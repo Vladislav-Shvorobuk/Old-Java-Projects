@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+<bean id="Robocop" class="TestingSpring.impl.Robocop">
+
+        <constructor-arg ref="Head"/>
+        <constructor-arg ref="Body"/>
+        <constructor-arg ref="Hand"/>
+        <constructor-arg ref="Leg"/>
+
+    </bean>
+
+
+    <bean id="Head" class="TestingSpring.impl.HeadImpl"/>
+    <bean id="Body" class="TestingSpring.impl.BodyImpl"/>
+    <bean id="Hand" class="TestingSpring.impl.HandImpl"/>
+    <bean id="Leg" class="TestingSpring.impl.LegImpl"/>
+
+
+</beans>
